@@ -1,9 +1,17 @@
 import "./App.css";
+import { Route, Routes} from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Orders from "./pages/Orders"
+
 
 function App() {
   return (
     <>
-      <h1>Helloo</h1>
+
+       <Routes>
+        <Route path="/" element={<Dashboard/>} />
+        <Route path="/orders" element={<Orders/>} />
+      </Routes>
     </>
   );
 }
