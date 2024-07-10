@@ -1,0 +1,10 @@
+.single-list {
+  display: flex;
+  justify-content: space-between;
+}
+.order-sample {
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}

@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         {/* Navbar */}
         <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
-        <main className="flex-grow-1 overflow-auto p-4 mt-5 pt-5">
+        <main className="main-content flex-grow-1 overflow-auto p-4 mt-5 pt-8">
           {children}
         </main>
       </div>

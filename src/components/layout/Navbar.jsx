@@ -4,7 +4,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = ({toggleSidebar,isSidebarOpen}) => {
   return (
-    <header className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <header className="navbar navbar-expand-lg navbar-white bg-white fixed-top">
     <div className="container-fluid">
       <Link className="navbar-brand" to="/">
         Metrix

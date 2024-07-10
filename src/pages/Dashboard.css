@@ -1,0 +1,120 @@
+
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 30% [col2-start] 30% [col3-start] 40% [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto;
+    color: #444;
+  }
+  
+  .box {
+    background-color:#444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+  .card1{
+    grid-column: col1-start / col2-start;
+    grid-row: row1-start;
+  }
+  .card2{
+    grid-column: col2-start / col3-start;
+    grid-row: row1-start ;
+  }
+  .card3{
+    grid-column: col3-start ;
+    grid-row: row1-start ;
+  }
+  
+  .pie-chart {
+    grid-column: col1-start / col2-start;
+    grid-row: row2-start / row4-start;
+  }
+  
+  .order-table {
+    grid-column: col3-start;
+    grid-row: row2-start / row4-end;
+  }
+  
+  .card4 {
+    grid-column: col2-start / col3-start;
+    grid-row: row2-start;
+  }
+  
+  .card5 {
+    grid-column: col2-start;
+    grid-row: row3-start;
+  }
+  
+  .bar-chart {
+    grid-column: col1-start / col3-start;
+    grid-row: row4-start / row5-start;
+  }
+  
+
+  @media (max-width: 1070px) {
+    .wrapper {
+      grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-start] auto [col4-end];
+      grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto [row5-start] auto;
+    }
+    .card1{
+        grid-column: col1-start /col3-start;
+        grid-row: row1-start;
+    }
+
+    .card2{
+        grid-column: col3-start/col4-end;
+        grid-row: row1-start;
+    }
+    .card3{
+        grid-column: col3-start/col4-end ;
+        grid-row: row2-start;
+    }
+  
+    .pie-chart {
+      grid-column: col1-start / col3-start;
+      grid-row: row2-start / row4-start;
+    }
+  
+    .order-table {
+      grid-column: col3-start/col4-end; 
+      grid-row: row4-start/row5-end;
+    }
+  
+    .card4 {
+      grid-column: col3-start/col4-end ;
+      grid-row: row3-start;
+    }
+  
+    .card5 {
+      grid-column: col1-start/col3-start;
+      grid-row: row4-start ;
+    }
+  
+    .bar-chart {
+      grid-column: col1-start / col3-start;
+      grid-row: row5-start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+    .card1,
+    .card2,
+    .card3,
+    .pie-chart,
+    .order-table,
+    .card4,
+    .card5,
+    .bar-chart {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
+  
