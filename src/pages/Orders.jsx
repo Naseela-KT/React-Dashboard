@@ -50,6 +50,22 @@ const Orders = () => {
                   placeholder="Search"
                 />
               </div>
+              <button>
+                <i className="fa-solid fa-filter"></i>
+                Filter
+              </button>
+              <button>
+                <i className="fa-solid fa-calendar-days"></i>
+                Filter
+              </button>
+              <button>
+                <i className="fa-regular fa-paper-plane"></i>
+                Share
+              </button>
+              <button>
+                Bulk Action
+                <i className="fa-solid fa-chevron-down"></i>
+              </button>
             </div>
           </div>
           <hr />
