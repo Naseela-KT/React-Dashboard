@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 
-import { FiChevronDown } from "react-icons/fi"; // Example dropdown icon
+import { FiChevronDown } from "react-icons/fi"; 
 import "./Card.css";
 
-const Card = ({ icon, title, content1, content2, content3,sub1,sub2,sub3 }) => {
+const Card = ({ icon, title, content1, content2, content3,sub1,sub2,sub3,color }) => {
   return (
     <div className="card">
       <div className="card-header">
         <div className="header-left">
-          <div className="icon">{icon}</div>
+          <div className="icon" style={color ? { backgroundColor: color, color: "#5570F1" } : {}}>{icon}</div>
         </div>
         <div className="header-right">
           <p>{title}</p>

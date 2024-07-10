@@ -3,20 +3,42 @@
   background-color: white;
 }
 
+.allproducts{
+  border: none;
+  background-color:#5570F1 ;
+  color: white;
+}
+.card-header.allproducts{
+  background-color:#5570F1 ;
+  color: white;
+}
+
+#icon{
+  background-color: #7087F3;
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  border: none;
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  margin-top: 0;
 }
 
 .icon {
   margin-right: 0.5rem;
+  background-color: antiquewhite;
+  padding: 0 5px ;
+  border-radius: 5px;
+  height: auto;
+  margin-top: -10px;
+  align-items: center;
 }
 
 .header-right {
@@ -25,12 +47,17 @@
 }
 
 .content {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   font-size: 0.2rem;
-  line-height: 1.6;
+  line-height: 1;
 }
 
 .card-body{
     display: flex;
     justify-content: space-between;
+    line-height: 0.5;
+}
+
+.card-body div p{
+  margin-top: 10px;
 }

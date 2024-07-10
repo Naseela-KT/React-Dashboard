@@ -1,21 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import { FiChevronDown } from "react-icons/fi";
 
 const ColumnChart = () => {
   const [series, setSeries] = useState([
     {
       name: 'Net Profit',
-      data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+      data: [44, 55, 57, 56, 61, 58, 63]
     },
-    {
-      name: 'Revenue',
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-    },
-    {
-      name: 'Free Cash Flow',
-      data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
-    }
   ]);
 
   const [options, setOptions] = useState({
@@ -26,7 +19,7 @@ const ColumnChart = () => {
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: '55%',
+        columnWidth: '20%',
         endingShape: 'rounded'
       }
     },
@@ -39,15 +32,11 @@ const ColumnChart = () => {
       colors: ['transparent']
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct']
-    },
-    yaxis: {
-      title: {
-        text: '$ (thousands)'
-      }
+      categories: ['Sept10', 'Sept11', 'Sept12', 'Sept13', 'Sept14', 'Sept15', 'Sept16']
     },
     fill: {
-      opacity: 1
+      opacity: 1,
+      colors:["#5570F1"]
     },
     tooltip: {
       y: {
@@ -59,8 +48,23 @@ const ColumnChart = () => {
   });
 
   return (
+    <>
+       <div className="card-header">
+        <div className="header-left">
+         <h6 style={{marginRight:"7px"}}>Summary</h6>
+         <select className="form-select-s custom-select" >
+          <option value="Completed">Sales</option>
+        </select>
+        </div>
+        <div className="header-right">
+          <p>Last 7 Days</p>
+          <FiChevronDown size={20} />
+        </div>
+      </div>
+      <ReactApexChart options={options} series={series} type="bar" height={350} />
+    </>
 
-        <ReactApexChart options={options} series={series} type="bar" height={350} />
+       
 
   );
 }

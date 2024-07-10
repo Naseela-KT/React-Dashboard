@@ -33,7 +33,7 @@
     grid-row: row2-start / row4-start;
   }
   
-  .order-table {
+  .order-table-sample {
     grid-column: col3-start;
     grid-row: row2-start / row4-end;
   }
@@ -41,6 +41,11 @@
   .card4 {
     grid-column: col2-start / col3-start;
     grid-row: row2-start;
+    background-color: #5570F1;
+  }
+
+  .box.card4{
+    background-color: #5570F1;
   }
   
   .card5 {
@@ -75,10 +80,10 @@
   
     .pie-chart {
       grid-column: col1-start / col3-start;
-      grid-row: row2-start / row4-start;
+      grid-row: row3-start / row4-start;
     }
   
-    .order-table {
+    .order-table-sample {
       grid-column: col3-start/col4-end; 
       grid-row: row4-start/row5-end;
     }
@@ -86,7 +91,10 @@
     .card4 {
       grid-column: col3-start/col4-end ;
       grid-row: row3-start;
+      
     }
+
+    
   
     .card5 {
       grid-column: col1-start/col3-start;
@@ -108,7 +116,7 @@
     .card2,
     .card3,
     .pie-chart,
-    .order-table,
+    .order-table-sample,
     .card4,
     .card5,
     .bar-chart {

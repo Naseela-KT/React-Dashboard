@@ -1,10 +1,10 @@
 import Layout from "../components/layout/Layout";
 import Card from "../components/card/Card";
-import { FiActivity } from "react-icons/fi"; 
 import "./Dashboard.css";
 import ApexChart from "../components/charts/Apexchart";
 import OrderSample from "../components/tables/order-sample/OrderSample";
 import ColumnChart from "../components/charts/Columnchart";
+import AllProductsCard from "../components/card/AllProductsCard";
 
 const Dashboard = () => {
   return (
@@ -13,7 +13,8 @@ const Dashboard = () => {
         <div className="wrapper">
           <div className="box card1">
           <Card
-            icon={<FiActivity size={24} />}
+            color={"#EAEDFD"}
+            icon={<i className="fa-solid fa-chart-pie"></i>}
             title="This Week"
             content1="Sales"
             content3="Volume"
@@ -23,7 +24,8 @@ const Dashboard = () => {
           </div>
           <div className="box card2">
           <Card
-            icon={<FiActivity size={24} />}
+            icon={<i className="fa-solid fa-user-group"></i>}
+            title="This Week"
             content1="Customers"
             content3="Active"
             sub1="1,250"
@@ -32,7 +34,8 @@ const Dashboard = () => {
           </div>
           <div className="box card3">
           <Card
-            icon={<FiActivity size={24} />}
+            icon={<i className="fa-solid fa-bag-shopping"></i>}
+            title="This Week"
             content1="All Orders"
             content2="Pending"
             content3="Complete"
@@ -46,12 +49,12 @@ const Dashboard = () => {
           <div className="box pie-chart">
             <ApexChart/>
           </div>
-          <div className="box order-table">
+          <div className="box order-table-sample">
             <OrderSample/>
           </div>
           <div className="box card4">
-          <Card
-            icon={<FiActivity size={24} />}
+          <AllProductsCard
+            icon={<i className="fa-regular fa-folder-closed"></i>}
             content1="All Orders"
             content2="Pending"
             content3="Complete"
@@ -62,7 +65,7 @@ const Dashboard = () => {
           </div>
           <div className="box card5">
           <Card
-            icon={<FiActivity size={24} />}
+            icon={<i className="fa-solid fa-cart-shopping"></i>}
             content1="All Orders"
             content2="Pending"
             content3="Complete"

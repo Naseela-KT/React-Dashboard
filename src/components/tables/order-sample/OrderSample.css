@@ -1,6 +1,7 @@
-.single-list {
+#single-list {
   display: flex;
   justify-content: space-between;
+  margin-left: -40px;
 }
 .order-sample {
   border-radius: 8px;
@@ -8,3 +9,31 @@
   margin-bottom: 1rem;
   background-color: white;
 }
+#single-list div img{
+  border: 0.1px solid rgb(214, 212, 212);
+  padding: 2px;
+  margin-right: 10px;
+}
+
+
+li{
+  list-style: none;
+}
+.mid-content{
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+.price{
+  margin-top: -15px;
+  font-weight: bold;
+}
+.price-status{
+  margin-top: -15px;
+  background-color: rgb(250, 220, 220);
+  color: rgb(253, 42, 42);
+  padding: 1px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+

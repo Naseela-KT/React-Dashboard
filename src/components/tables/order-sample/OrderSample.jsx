@@ -6,19 +6,31 @@ const OrderSample = () => {
     <div className="order-sample">
     <h6>Recent Orders</h6>
         <ul>
-          <li style={{listStyle:"none"}}>
+          <li>
             <SingleList/>
           </li>
-          <li style={{listStyle:"none"}}>
+          <li>
             <SingleList/>
           </li>
-          <li style={{listStyle:"none"}}>
+          <li>
             <SingleList/>
           </li>
-          <li style={{listStyle:"none"}}>
+          <li>
             <SingleList/>
           </li>
-          <li style={{listStyle:"none"}}>
+          <li>
+            <SingleList/>
+          </li>
+          <li>
+            <SingleList/>
+          </li>
+          <li>
+            <SingleList/>
+          </li>
+          <li>
+            <SingleList/>
+          </li>
+          <li>
             <SingleList/>
           </li>
         </ul>

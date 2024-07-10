@@ -1,23 +1,22 @@
 import "./OrderSample.css";
 const SingleList = () => {
   return (
-    <div className="single-list">
-   
+    <div id="single-list">
       <div className="d-flex">
         <img
-          src="https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg"
+          src="https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_SR360,240_QL70_.jpg"
           height={30}
-          width={25}
+          width={30}
         />
 
-        <div>
+        <div className="mid-content">
           <p>iPhone13</p>
-          <p>730,000.00 x 1</p>
+          <p className="price">730,000.00 x 1</p>
         </div>
       </div>
-      <div className="d-flex flex-col">
-        <p>12 sep 2022</p>
-        <p>Pending</p>
+      <div className="end-content">
+          <p>12 sep 2022</p>
+          <p className="price-status">Pending</p>
       </div>
     </div>
   );
