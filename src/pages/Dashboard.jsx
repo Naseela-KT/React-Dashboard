@@ -2,8 +2,9 @@ import Layout from "../components/layout/Layout";
 import Card from "../components/card/Card";
 import { FiActivity } from "react-icons/fi"; 
 import "./Dashboard.css";
-// import ApexChart from "../components/charts/Apexchart";
-// import OrderSample from "../components/tables/order-sample/OrderSample";
+import ApexChart from "../components/charts/Apexchart";
+import OrderSample from "../components/tables/order-sample/OrderSample";
+import ColumnChart from "../components/charts/Columnchart";
 
 const Dashboard = () => {
   return (
@@ -42,11 +43,37 @@ const Dashboard = () => {
 
           </div>
 
-          <div className="box pie-chart">A</div>
-          <div className="box order-table">B</div>
-          <div className="box card4">C</div>
-          <div className="box card5">D</div>
-          <div className="box bar-chart">E</div>
+          <div className="box pie-chart">
+            <ApexChart/>
+          </div>
+          <div className="box order-table">
+            <OrderSample/>
+          </div>
+          <div className="box card4">
+          <Card
+            icon={<FiActivity size={24} />}
+            content1="All Orders"
+            content2="Pending"
+            content3="Complete"
+            sub1="450"
+            sub2="5"
+            sub3="445"
+          />
+          </div>
+          <div className="box card5">
+          <Card
+            icon={<FiActivity size={24} />}
+            content1="All Orders"
+            content2="Pending"
+            content3="Complete"
+            sub1="450"
+            sub2="5"
+            sub3="445"
+          />
+          </div>
+          <div className="box bar-chart">
+            <ColumnChart/>
+          </div>
         </div>
       </Layout>
     </>

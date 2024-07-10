@@ -1,0 +1,47 @@
+th{
+    font-size: 12px;
+}
+td{
+    font-size: 10px;
+}
+tr{
+    margin-bottom: 15px;
+}
+.custom-select {
+    border: none;
+    background-color: #F3F3F3; 
+    outline: none; 
+    box-shadow: none;
+    border-radius: 5px;
+  }
+  .custom-table tbody tr td {
+    border-bottom: none; 
+  }
+
+.status{
+    font-size: 10px;
+}
+ 
+  .c {
+    border-radius: 10px;
+    padding: 3px 8px;
+    color: #759b83;
+    font-weight: bold;
+    background-color: #DEEEE8;
+  }
+
+  .i {
+    border-radius: 10px;
+    padding: 3px 8px;
+    color: #5570F1;
+    font-weight: bold;
+    background-color: #E4E8FD;
+  }
+
+  .p {
+    border-radius: 10px;
+    padding: 3px 8px;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFF2E2;
+  }
