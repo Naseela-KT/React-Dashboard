@@ -45,7 +45,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             }
             label="Dashboard"
           />
-          <NavItem to="" icon={<i className="fa-solid fa-bag-shopping"></i>} label="Orders" />
+          <NavItem to="/orders" icon={<i className="fa-solid fa-bag-shopping"></i>} label="Orders" />
           <NavItem to="" icon={<i className="fa-solid fa-user-group"></i>} label="Customers" />
           <NavItem to="" icon={<i className="fa-regular fa-folder-closed"></i>} label="Inventory" />
           <NavItem to="" icon={<i className="fa-regular fa-comment-dots"></i>} label="Conversations" />
